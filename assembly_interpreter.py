@@ -4,7 +4,7 @@ from collections import deque
 from sys import argv
 
 def assembler_interpreter(program, DEBUG=False):
-    """Interprets lines of aseembly program and returns a set return code"""
+    """Interprets lines of assembly program and returns a set return code"""
 
     # Tokenize the lines and filter out whitespace
     program = filter(None, map(process_line, program.split('\n')))
